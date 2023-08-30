@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    /* Centralizar na horizontal */
+    align-items: flex-start;
+    /* Alinhar no topo verticalmente */
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* Tamanho máximo */
+    max-width: 1200px;
+    /* Define um máximo de 1200px */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f6c1ff;
+    border-radius: 15px;
+}
+
+.header {
+    background-color: #7E57C2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    background-color: #b290ec;
+    width: 150px;
+    height: auto;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.content-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #E1BEE7;
+    color: white;
+    border-radius: 15px;
+}
+
+.links div {
+    flex-wrap: wrap;
+    flex-basis: 3.84%;
+    text-align: center;
+}
+
+.palcoAnimacao {
+    width: 90%;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eb91fd;
+    margin-top: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer {
+    background-color: #7E57C2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Media Query para telas menores que 800px */
+@media (max-width: 800px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .menu {
+        text-align: center;
+        width: 90%;
+        margin: 0;
+        font-size: 35px;
+        border-radius: 15px;
+    }
+
+
+    .links {
+        display: flex;
+    }
+
+    .links div {
+        flex: 1;
+        padding: 3%;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .content-right,
+    .content-bottom {
+        padding: 20px;
+    }
+}
