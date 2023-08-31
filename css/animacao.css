@@ -1,0 +1,27 @@
+.Letra div {
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold ;
+    animation: Letra 1s linear infinite;
+    animation-direction: alternate;
+    text-align: center;
+}
+
+
+@keyframes Letra {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    10% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+}
