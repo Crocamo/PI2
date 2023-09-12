@@ -8,74 +8,86 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/animacao.css" type="text/css" />
 </head>
-<style>
 
-</style>
+<script>
+    function alfabeto(x){
+        let letra = document.querySelector('.pLetra');
+        let Imagem = document.querySelector('.pImagem');
+        let MaoL = document.querySelector('.pMaoL');
+        let MaoP = document.querySelector('.pMaoP');
+        let Som = document.querySelector('.Som');
 
+        letra.textContent = x;
+        Imagem.setAttribute('src', 'img/'+x+'/img.gif')
+        MaoL.setAttribute('src', 'img/'+x+'/Mao_L.gif')
+        MaoP.setAttribute('src', 'img/'+x+'/Mao_P.gif')
+}
+</script>
 <body>
     <div class="content">
 
         <div class="header">
-            <div>Header</div>
+            <div>Libras Start</div>
         </div>
         <div class="main">
 
             <div class="menu">
-                <div><a href="#">Menu 1</a></div>
-                <div><a href="#">Menu 2</a></div>
-                <div><a href="#">Menu 3</a></div>
-                <div><a href="#">Menu 4</a></div>
+                <div><a href="#">Página Principal</a></div><hr>
+                <div><a href="#">Perfil</a></div><hr>
+                <div><a href="#">Menu 3</a></div><hr>
+                <div><a href="#">Menu 4</a></div><hr>
             </div>
 
             <div class="content-right">
 
                 <div class="links">
-                    <div><a href="#">A</a></div>
-                    <div><a href="#">B</a></div>
-                    <div><a href="#">C</a></div>
-                    <div><a href="#">D</a></div>
-                    <div><a href="#">E</a></div>
-                    <div><a href="#">F</a></div>
-                    <div><a href="#">G</a></div>
-                    <div><a href="#">H</a></div>
-                    <div><a href="#">I</a></div>
-                    <div><a href="#">J</a></div>
-                    <div><a href="#">K</a></div>
-                    <div><a href="#">L</a></div>
-                    <div><a href="#">M</a></div>
-                    <div><a href="#">N</a></div>
-                    <div><a href="#">O</a></div>
-                    <div><a href="#">P</a></div>
-                    <div><a href="#">Q</a></div>
-                    <div><a href="#">R</a></div>
-                    <div><a href="#">S</a></div>
-                    <div><a href="#">T</a></div>
-                    <div><a href="#">U</a></div>
-                    <div><a href="#">V</a></div>
-                    <div><a href="#">X</a></div>
-                    <div><a href="#">W</a></div>
-                    <div><a href="#">Y</a></div>
-                    <div><a href="#">Z</a></div>
+                    <div onclick="alfabeto('A')" class="btn">A</div>
+                    <div onclick="alfabeto('B')" class="btn">B</div>
+                    <div onclick="alfabeto('C')" class="btn">C</div>
+                    <div onclick="alfabeto('D')" class="btn">D</div>
+                    <div onclick="alfabeto('E')" class="btn">E</div>
+                    <div onclick="alfabeto('F')" class="btn">F</div>
+                    <div onclick="alfabeto('G')" class="btn">G</div>
+                    <div onclick="alfabeto('H')" class="btn">H</div>
+                    <div onclick="alfabeto('I')" class="btn">I</div>
+                    <div onclick="alfabeto('J')" class="btn">J</div>
+                    <div onclick="alfabeto('K')" class="btn">K</div>
+                    <div onclick="alfabeto('L')" class="btn">L</div>
+                    <div onclick="alfabeto('M')" class="btn">M</div>
+                    <div onclick="alfabeto('N')" class="btn">N</div>
+                    <div onclick="alfabeto('O')" class="btn">O</div>
+                    <div onclick="alfabeto('P')" class="btn">P</div>
+                    <div onclick="alfabeto('Q')" class="btn">Q</div>
+                    <div onclick="alfabeto('R')" class="btn">R</div>
+                    <div onclick="alfabeto('S')" class="btn">S</div>
+                    <div onclick="alfabeto('T')" class="btn">T</div>
+                    <div onclick="alfabeto('U')" class="btn">U</div>
+                    <div onclick="alfabeto('V')" class="btn">V</div>
+                    <div onclick="alfabeto('X')" class="btn">X</div>
+                    <div onclick="alfabeto('W')" class="btn">W</div>
+                    <div onclick="alfabeto('Y')" class="btn">Y</div>
+                    <div onclick="alfabeto('Z')" class="btn">Z</div>
                 </div>
 
                 <div class="palcoAnimacao">
-                    <div class="Div Letra"><div>A</div></div>
-                    <div class="Div Imagem"><img src="img/a/aviao.gif"></div>
-                    <div class="Div MaoL"><img src="img/a/a.jpg"></div>
-                    <div class="Div MaoP"><img src="img/a/maoP.jpg"></div>
-                    <div class="Som">
-                        <br><br><br><br><br>
-                        <embed height="60" type="audio/wav" width="144" src="img/a/aviao.wav" volume="60" loop="false" autostart="false" />
+                    <div class="Div alfabeto Letra"><div class="pLetra">A</div></div>
+                    <div class="Div alfabeto Imagem"><img class="pImagem" src="img/a/img.gif"></div>
+                    <div class="Div alfabeto MaoL"><img class="pMaoL" src="img/a/Mao_L.gif"></div>
+                    <div class="Div alfabeto MaoP"><img class="pMaoP" src="img/a/Mao_P.gif"></div>
+                    <div class="Som alfabeto">
+                    <!--    <br><br><br><br><br>
+                        <embed height="60" type="audio/wav" width="144" src="img/a/a.wav" volume="60" loop="false" autostart="false" />
                         <audio controls autoplay>
-                        <source src="img/a/aviao.wav" type="audio/wav">
-                      </audio></div>
+                        <source src="img/a/a.wav" type="audio/wav">
+                      </audio>-->
+                    </div>
 
                 </div>
 
             </div>
         </div>
 
-        <div class="footer">Footer</div>
+        <div class="footer">Projeto Integrador em Computação II - Turma 001</div>
 
     </div>
 

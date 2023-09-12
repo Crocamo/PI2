@@ -66,9 +66,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    background-color: #E1BEE7;
-    color: white;
+    background-color: #ffffff;
+    color: blueviolet;
     border-radius: 15px;
+    border: 1px #7E57C2 solid;
 }
 
 .links div {
@@ -79,26 +80,28 @@ a {
 
 .palcoAnimacao {
     width: 95%;
-    height: 520px;
+    height: 620px;
     text-align: center;
-    background-color: #eb91fd;
     margin-top: 10px;
     align-self: center;
     justify-self: center;
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px #7E57C2 solid;
+    border: 2px #7E57C2 solid;
     border-radius: 20px;
+    padding: 5px;
 }
 
 .palcoAnimacao div{
     width: 48%;
-    height: 250px;
+    height: 300px;
+    
 }
 
 .Div{
-    margin: 5px;
+    margin: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +120,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .Imagem img{
@@ -130,16 +132,20 @@ a {
 
 .MaoL img{
     max-width:250px;
-    max-height:250px;
+    max-height:300px;
     width: 100%;
     height: auto;
 }
 
 .MaoP img{
     max-width:250px;
-    max-height:250px;
+    max-height:300px;
     width: 100%;
     height: auto;
+}
+
+.Som{
+    display: none;
 }
 
 .footer {
@@ -163,7 +169,7 @@ a {
     .menu {
         text-align: center;
         width: 90%;
-        margin: 0;
+        margin: 5px;
         font-size: 35px;
         border-radius: 15px;
         align-self: center;
