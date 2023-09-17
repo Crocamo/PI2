@@ -6,67 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/larguraPosicao.css" type="text/css" />
     <link rel="stylesheet" href="css/animacao.css" type="text/css" />
 </head>
-
-<script>
-    function alfabeto(x){
-        let letra = document.querySelector('.pLetra');
-        let Imagem = document.querySelector('.pImagem');
-        let MaoL = document.querySelector('.pMaoL');
-        let MaoP = document.querySelector('.pMaoP');
-        let Som = document.querySelector('.Som');
-
-        letra.textContent = x;
-        Imagem.setAttribute('src', 'img/'+x+'/img.gif')
-        MaoL.setAttribute('src', 'img/'+x+'/Mao_L.gif')
-        MaoP.setAttribute('src', 'img/'+x+'/Mao_P.gif')
-}
-</script>
 <body>
     <div class="content">
 
         <div class="header">
-            <div>Libras Start</div>
+            <div class="topo"><img src="img/libras-br.jpg" alt=""></div>
+            <div class="topoL">alterar imagem</div/div>
         </div>
         <div class="main">
 
-            <div class="menu">
-                <div><a href="#">Página Principal</a></div><hr>
-                <div><a href="#">Perfil</a></div><hr>
-                <div><a href="#">Menu 3</a></div><hr>
-                <div><a href="#">Menu 4</a></div><hr>
+            <div class="menu verdinho">
+                <div class="verde"><a href="#">Página Principal</a></div><hr>
+                <div class="violeta"><a href="#" >Perfil</a></div>
+                <div class="laranja"><a href="#" >Menu 3</a></div>
+                <div class="azul"><a href="#" >Menu 4</a></div><hr>
             </div>
 
             <div class="content-right">
 
                 <div class="links">
-                    <div onclick="alfabeto('A')" class="btn">A</div>
-                    <div onclick="alfabeto('B')" class="btn">B</div>
-                    <div onclick="alfabeto('C')" class="btn">C</div>
-                    <div onclick="alfabeto('D')" class="btn">D</div>
-                    <div onclick="alfabeto('E')" class="btn">E</div>
-                    <div onclick="alfabeto('F')" class="btn">F</div>
-                    <div onclick="alfabeto('G')" class="btn">G</div>
-                    <div onclick="alfabeto('H')" class="btn">H</div>
-                    <div onclick="alfabeto('I')" class="btn">I</div>
-                    <div onclick="alfabeto('J')" class="btn">J</div>
-                    <div onclick="alfabeto('K')" class="btn">K</div>
-                    <div onclick="alfabeto('L')" class="btn">L</div>
-                    <div onclick="alfabeto('M')" class="btn">M</div>
-                    <div onclick="alfabeto('N')" class="btn">N</div>
-                    <div onclick="alfabeto('O')" class="btn">O</div>
-                    <div onclick="alfabeto('P')" class="btn">P</div>
-                    <div onclick="alfabeto('Q')" class="btn">Q</div>
-                    <div onclick="alfabeto('R')" class="btn">R</div>
-                    <div onclick="alfabeto('S')" class="btn">S</div>
-                    <div onclick="alfabeto('T')" class="btn">T</div>
-                    <div onclick="alfabeto('U')" class="btn">U</div>
-                    <div onclick="alfabeto('V')" class="btn">V</div>
-                    <div onclick="alfabeto('X')" class="btn">X</div>
-                    <div onclick="alfabeto('W')" class="btn">W</div>
-                    <div onclick="alfabeto('Y')" class="btn">Y</div>
-                    <div onclick="alfabeto('Z')" class="btn">Z</div>
+                    <div onclick="alfabeto('A')" class="btn violeta">A</div>
+                    <div onclick="alfabeto('B')" class="btn azul">B</div>
+                    <div onclick="alfabeto('C')" class="btn vermelho">C</div>
+                    <div onclick="alfabeto('D')" class="btn violeta">D</div>
+                    <div onclick="alfabeto('E')" class="btn azul">E</div>
+                    <div onclick="alfabeto('F')" class="btn vermelho">F</div>
+                    <div onclick="alfabeto('G')" class="btn violeta">G</div>
+                    <div onclick="alfabeto('H')" class="btn azul">H</div>
+                    <div onclick="alfabeto('I')" class="btn vermelho">I</div>
+                    <div onclick="alfabeto('J')" class="btn violeta">J</div>
+                    <div onclick="alfabeto('K')" class="btn azul">K</div>
+                    <div onclick="alfabeto('L')" class="btn vermelho">L</div>
+                    <div onclick="alfabeto('M')" class="btn violeta">M</div>
+                    <div onclick="alfabeto('N')" class="btn azul">N</div>
+                    <div onclick="alfabeto('O')" class="btn vermelho">O</div>
+                    <div onclick="alfabeto('P')" class="btn violeta">P</div>
+                    <div onclick="alfabeto('Q')" class="btn azul">Q</div>
+                    <div onclick="alfabeto('R')" class="btn vermelho">R</div>
+                    <div onclick="alfabeto('S')" class="btn violeta">S</div>
+                    <div onclick="alfabeto('T')" class="btn azul">T</div>
+                    <div onclick="alfabeto('U')" class="btn vermelho">U</div>
+                    <div onclick="alfabeto('V')" class="btn violeta">V</div>
+                    <div onclick="alfabeto('X')" class="btn azul">X</div>
+                    <div onclick="alfabeto('W')" class="btn vermelho">W</div>
+                    <div onclick="alfabeto('Y')" class="btn violeta">Y</div>
+                    <div onclick="alfabeto('Z')" class="btn azul">Z</div>
                 </div>
 
                 <div class="palcoAnimacao">
@@ -90,7 +77,7 @@
         <div class="footer">Projeto Integrador em Computação II - Turma 001</div>
 
     </div>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
