@@ -10,3 +10,7 @@ function alfabeto(x){
     MaoL.setAttribute('src', 'img/'+x+'/Mao_L.gif')
     MaoP.setAttribute('src', 'img/'+x+'/Mao_P.gif')
 }
+
+function btnMenu(){
+    return
+}
